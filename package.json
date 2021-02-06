@@ -1,0 +1,47 @@
+{
+  "name": "aileen-cache",
+  "version": "0.1.0",
+  "description": "Cache From Aileen Framework",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "build": "rm -rf dist && tsc --build tsconfig.build.json",
+    "test": "cross-env NODE_ENV=dev ts-mocha --exit test/**/*.*.ts",
+    "cov": "nyc --reporter=lcov npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laohu-aileen/aileen-cache.git"
+  },
+  "keywords": [
+    "Cache",
+    "Aileen"
+  ],
+  "author": "胡永强",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laohu-aileen/aileen-cache/issues"
+  },
+  "homepage": "https://github.com/laohu-aileen/aileen-cache#readme",
+  "devDependencies": {
+    "@types/ioredis": "^4.19.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^14.14.10",
+    "@types/power-assert": "^1.5.3",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "power-assert": "^1.6.1",
+    "prettier": "^2.2.0",
+    "ts-mocha": "^8.0.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "aileen-core": "^0.2.0",
+    "ioredis": "^4.20.0"
+  }
+}

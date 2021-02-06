@@ -1,6 +1,6 @@
 {
   "name": "aileen-cache",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cache From Aileen Framework",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -32,6 +32,7 @@
     "@types/mocha": "^8.0.4",
     "@types/node": "^14.14.10",
     "@types/power-assert": "^1.5.3",
+    "@types/uuid": "^8.3.0",
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
     "power-assert": "^1.6.1",
@@ -42,6 +43,7 @@
   },
   "dependencies": {
     "aileen-core": ">=0.2.1",
-    "ioredis": ">=4.0.0"
+    "ioredis": ">=4.0.0",
+    "uuid": ">=3.0.0"
   }
 }

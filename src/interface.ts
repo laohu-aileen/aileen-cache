@@ -6,6 +6,12 @@ export interface Cache {
   get(key: string): Promise<string>;
 
   /**
+   * 读取哈希
+   * @param key
+   */
+  hgetall(key: string): Promise<{ [key: string]: string }>;
+
+  /**
    * 写入缓存
    * @param key
    * @param value

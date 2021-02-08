@@ -26,6 +26,18 @@ export class CacheImpl implements Cache {
     await this.engine.setex(key, timeout, value);
   }
 
+  /**
+   * 读取哈希
+   * @param key
+   */
+  hgetall(
+    key: string
+  ): Promise<{
+    [key: string]: string;
+  }> {
+    return this.engine.hgetall(key);
+  }
+
   async del(key: string): Promise<void> {
     await this.engine.del(key);
   }
